@@ -1,0 +1,458 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(226, 43%, 10%);
+    font-family: "Rubik", sans-serif;
+    padding: 80px 0;
+}
+
+.profileCard{
+    display: flex;
+    align-content: center;
+    padding: 30.5px 32.5px;
+    margin: 0;
+    background-color: hsl(246, 80%, 60%);
+    width: 262.5px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    gap: 15px;
+    
+    .profileImg{
+        display: flex;
+        margin: 0;
+        width: 85px;
+        justify-content: center;
+        img{
+            width: 65px;
+            height: 65px;
+            border: 3px solid #FFF;
+            border-radius: 70px;
+        }
+    }
+    .profileData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        opacity: 0.9;
+        width: 180px;
+        
+        p{
+            margin: 0;
+            margin-bottom: 5px;
+            font-size: 14px;
+            opacity: 0.5;
+        }
+        h2{
+            margin: 0;
+            font-size: 22px;
+            font-weight: 300;
+        }
+    }
+}
+
+.reportOptions{
+    padding: 24px 0px;
+    background-color: hsl(235, 46%, 20%);
+    width: 327.5px;
+    transform: translate(0, -20px);
+    position: relative;
+    z-index: 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button{
+        margin-top: 20px;
+        width: 85px;
+        background-color: transparent;
+        border: none;
+        font-size: 17px;
+        color: hsl(235, 45%, 61%);
+        font-family: "Rubik", sans-serif;
+    }
+    button:hover{
+        color: #FFF;
+        cursor: pointer;
+    }
+    .active{
+        color: #FFF;
+    }
+    .active:hover{
+        cursor: default;
+    }
+}
+
+.reportCards{
+    margin-top: 4px;
+    gap: 20px;
+}
+
+.reportCard{
+    width: 307.5;
+    border-radius: 15px;
+    padding: 10px;
+    height: 130px;
+    overflow: hidden;  
+    img{
+        width: 80px;
+    }  
+}
+
+.Work{
+    background-color: hsl(15, 100%, 70%);
+    img{
+        transform: translate(215px, -22px);
+        width: 85px;
+    }
+}
+
+.Play{
+    background-color: hsl(195, 74%, 62%);
+    img{
+        transform: translate(215px, -16px);
+    }
+}
+
+.Study{
+    background-color:  hsl(348, 100%, 68%);
+    img{
+        transform: translate(215px, -16px);
+    }
+}
+
+.Exercise{
+    background-color:  hsl(145, 58%, 55%);
+    img{
+        transform: translate(215px, -9px);
+    }
+}
+
+.Social{
+    background-color:  hsl(264, 64%, 52%);
+    img{
+        transform: translate(215px, -27px);
+    }
+}
+
+.Self-Care{
+    background-color:  hsl(43, 84%, 65%);
+    img{
+        width: 75px;
+        transform: translate(225px, -24px);
+    }
+}
+
+.reportData{
+    background-color: hsl(235, 46%, 20%);
+    width: 270px;
+    border-radius: 15px;
+    padding: 18px 25px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    position: relative;
+    transform: translate(0, -112px);
+    div{
+        height: 38px;
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            margin: 0;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        h1{
+            margin: 0;
+            color: #FFF;
+            font-weight: 300;
+        }
+        .previous{
+            font-size: 15px;
+            font-weight: 400;
+            opacity: 0.5;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.reportData:hover{
+    cursor: pointer;
+    background-color: hsl(235, 45%, 35%);
+}
+
+.reportData{
+    margin-bottom: -87px;
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+    color: #fff;
+    a{
+        color: aqua;
+    }
+}
+
+@media (min-width: 1024px){
+
+    body{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 225px 660px;
+        grid-template-rows: auto auto;
+        gap: 30px;   
+    }
+
+    .profileContainer{
+        display: flex;
+        flex-direction: column;
+        width: 225px;
+        justify-self: flex-end;
+    }
+
+    .profileCard{
+        flex-direction: column;
+        width: 160px;
+        height: 333.3px;
+        gap: 48px;
+        .profileImg{
+            img{
+                margin-top: 9px;
+                width: 85px;
+                height: 85px;
+                border: 4px solid #FFF;
+            }
+        }
+            
+        .profileData{            
+            p{
+                margin-bottom: 1px;
+                font-size: 16px;
+                opacity: 0.6;
+            }
+            h2{
+                font-size: 44px;
+            }
+        }
+    }
+
+    .reportOptions{
+        width: 165px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px 30px;
+        padding-bottom: 34px;
+        button{
+            margin-top: 21px;        
+            font-size: 20px;
+            text-align: left;
+        }
+    }
+
+    .reportDataCardContainer{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        align-items: center;
+    }
+    
+    .reportCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 30px;
+        transform: translate(0, 5px);
+    }
+
+    .reportCard{
+        width: 180px;
+        height: 220px;
+        img{
+            width: 90px;
+        }  
+    }
+
+    .Work{
+        img{
+            transform: translate(90px, -16px);
+            width: 80px;
+        }
+    }
+
+    .Play{
+        img{
+            transform: translate(82px, -15px);
+            width: 85px;
+        }
+    }
+
+    .Study{
+        img{
+            transform: translate(80px, -16px);
+        }
+    }
+
+    .Exercise{
+        img{
+            transform: translate(80px, -8px);
+        }
+    }
+
+    .Social{
+        img{
+            transform: translate(85px, -30px);
+        }
+    }
+
+    .Self-Care{
+        img{
+            transform: translate(100px, -16px);
+            width: 70px;
+        }
+    }
+
+    .reportData{
+        width: 136px;
+        padding: 30px 32px;
+        height: 161px;
+        transform: translate(0, -190px);
+        gap: 29px;
+        div{
+            height: 26px;
+            gap: 10px;
+            p{
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .previous{
+                font-size: 18px;
+            }
+            img{
+                width: 23px;
+            }
+        }
+        div:nth-child(2){
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            p{
+                font-size: 24px;
+                font-weight: 400;
+            }
+            h1{
+                margin: 0;
+                color: #FFF;
+                font-weight: 300;
+                font-size: 44px;
+            }
+            .previous{
+                font-size: 16px;
+                font-weight: 300;
+                opacity: 1;
+                color: hsl(236, 100%, 87%);
+            }
+
+        }
+    }
+
+    .reportData{
+        margin-bottom: -190px;
+    }
+
+    footer{
+        align-content: center;
+        width: 915px;
+    }
+}
+
+@media (min-width: 1280px){
+
+    body{
+        align-items: center;
+        grid-template-columns: 300px 900px;
+    }
+
+    .profileContainer{
+        width: 284px;
+    }
+
+    .profileCard{
+        width: 215px;            
+    }
+
+    .reportOptions{
+        width: 220px;
+    }
+
+    .reportDataCardContainer{
+        width: 285px;
+    }
+    
+    .reportCards{
+        gap: 32px;
+    }
+
+    .reportCard{
+        width: 264px;
+    }
+
+    .Work{
+        img{
+            transform: translate(165px, -23px);
+        }
+    }
+
+    .Play{
+        img{
+            transform: translate(165px, -16px);
+            width: 85px;
+        }
+    }
+
+    .Study{
+        img{
+            transform: translate(165px, -18px);
+        }
+    }
+
+    .Exercise{
+        img{
+            transform: translate(165px, -10px);
+        }
+    }
+
+    .Social{
+        img{
+            transform: translate(168px, -30px);
+        }
+    }
+
+    .Self-Care{
+        img{
+            width: 80px;
+            transform: translate(175px, -26px);
+        }
+    }
+
+    .reportData{
+        width: 220px;
+        div:nth-child(2){
+            h1{
+                font-size: 60px;
+            }
+        }
+    }
+
+    footer{
+        width: 1200px;
+    }
+}
