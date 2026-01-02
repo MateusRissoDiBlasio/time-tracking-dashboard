@@ -31,6 +31,7 @@ fetch('data.json')
         reportDataCard.appendChild(reportDataCardContainer);
         const elypsesImg = document.createElement('img');
         elypsesImg.src = './images/icon-ellipsis.svg';
+        elypsesImg.alt = 'elypsesImg'
         const title = document.createElement('p');
         title.textContent = cardInfo.title;
 
