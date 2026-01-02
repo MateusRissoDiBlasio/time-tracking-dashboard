@@ -5,6 +5,10 @@ body{
     background-color: hsl(226, 43%, 10%);
     font-family: "Rubik", sans-serif;
     padding: 80px 0;
+    main{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .profileCard{
@@ -205,13 +209,15 @@ body{
 @media (min-width: 1024px){
 
     body{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 225px 660px;
-        grid-template-rows: auto auto;
-        gap: 30px;   
+        display: flex;
+        main{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 225px 660px;
+            grid-template-rows: auto auto;
+            gap: 30px;   
+        }
     }
-
     .profileContainer{
         display: flex;
         flex-direction: column;
@@ -377,10 +383,11 @@ body{
 @media (min-width: 1280px){
 
     body{
-        align-items: center;
-        grid-template-columns: 300px 900px;
-    }
-
+        main{
+            align-items: center;
+            grid-template-columns: 300px 900px;
+        }
+    }   
     .profileContainer{
         width: 284px;
     }

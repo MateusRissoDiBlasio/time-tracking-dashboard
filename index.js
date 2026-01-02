@@ -24,6 +24,7 @@ fetch('data.json')
         card.classList.add('reportCard', cardInfo.title.replace(/\s+/g, '-'));
         const img = document.createElement('img');
         img.src = './images/icon-' + cardInfo.title.toLowerCase().replace(/\s+/g, '-') + '.svg';
+        img.alt = cardInfo.title.toLowerCase().replace(/\s+/g, '-') + '-icon'
         const reportDataCard = document.createElement('div');
         reportDataCard.classList.add('reportData');
         const reportDataCardContainer = document.createElement('div');
